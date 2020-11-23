@@ -1,0 +1,60 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '../App.scss';
+
+
+div.search {
+  @extend .col-12;
+  padding-top: 6.5px;
+  padding-bottom: 7.5px;
+  
+  .wide-background {
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -100%;
+    width: 1000%;
+    padding: 0;
+    height: 47px;
+    background-color: #fee600;
+  }
+
+
+  * {
+    height: 33px;
+    padding-bottom: 0px;
+  }
+  
+  div.search-container {
+    @extend .input-group;
+    @extend .mb-3;
+    
+    .logo {
+      @extend .m-r-md;
+    }
+    input {
+      color: #333;
+      padding-top: 0px;
+      font-size: 18px;
+      border-radius: 2px 0 0 2px !important;
+      border: none;
+      box-shadow: none;
+      &::placeholder {
+        color: 999;
+      }
+    }
+    .search-btn {
+      @extend .input-group-append;
+      cursor: pointer;
+      right: 0;
+      width: 33px;
+      background-color: #eee;
+      text-align: center;
+      border-radius: 0 2px 2px 0;
+      
+      img {
+        $search-btn-height: 50%;
+        height: $search-btn-height;
+        margin: (100% - $search-btn-height) / 2;
+      }
+    }
+  }
+}

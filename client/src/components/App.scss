@@ -1,0 +1,150 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  border-collapse: collapse;
+  font-family: Helvetica, Helvetica, Arial, sans-serif;
+  background-color: #eee !important;
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+div.app {
+  @extend .container-fluid;
+
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+
+  .spinner-ui {
+    @extend .spinner-border;
+    @extend .text-warning;
+    position: fixed;
+    z-index: 999;
+    overflow: visible;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .spinner-ui-suspense {
+    @extend .spinner-border;
+    @extend .spinner-border-sm;
+    @extend .text-primary;
+    margin: 16.5px;
+  }
+
+  .items-list,
+  .item-description {
+    width: 100%;
+
+    div.page-content {
+      @extend .col-12;
+      background-color: #fff;
+      border-radius: 4px;
+      min-height: 400px;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  $sm-space-size: 5px;
+  $md-space-size: 16px;
+  $lg-space-size: 32px;
+
+  .m-t-sm {
+    margin-top: $sm-space-size;
+  }
+  .m-b-sm {
+    margin-bottom: $sm-space-size;
+  }
+  .m-l-sm {
+    margin-left: $sm-space-size;
+  }
+  .m-r-sm {
+    margin-right: $sm-space-size;
+  }
+
+  .m-t-md {
+    margin-top: $md-space-size;
+  }
+  .m-b-md {
+    margin-bottom: $md-space-size;
+  }
+  .m-l-md {
+    margin-left: $md-space-size;
+  }
+  .m-r-md {
+    margin-right: $md-space-size;
+  }
+
+  .m-t-lg {
+    margin-top: $lg-space-size;
+  }
+  .m-b-lg {
+    margin-bottom: $lg-space-size;
+  }
+  .m-l-lg {
+    margin-left: $lg-space-size;
+  }
+  .m-r-lg {
+    margin-right: $lg-space-size;
+  }
+
+  .p-t-sm {
+    padding-top: $sm-space-size;
+  }
+  .p-b-sm {
+    padding-bottom: $sm-space-size;
+  }
+  .p-l-sm {
+    padding-left: $sm-space-size;
+  }
+  .p-r-sm {
+    padding-right: $sm-space-size;
+  }
+
+  .p-t-md {
+    padding-top: $md-space-size;
+  }
+  .p-b-md {
+    padding-bottom: $md-space-size;
+  }
+  .p-l-md {
+    padding-left: $md-space-size;
+  }
+  .p-r-md {
+    padding-right: $md-space-size;
+  }
+
+  .p-t-lg {
+    padding-top: $lg-space-size;
+  }
+  .p-b-lg {
+    padding-bottom: $lg-space-size;
+  }
+  .p-l-lg {
+    padding-left: $lg-space-size;
+  }
+  .p-r-lg {
+    padding-right: $lg-space-size;
+  }
+}

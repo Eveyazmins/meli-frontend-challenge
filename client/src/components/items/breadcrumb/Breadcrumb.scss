@@ -1,0 +1,18 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '../../App.scss';
+
+div.breadcrumb {
+  @extend .m-t-sm;
+  @extend .m-b-sm;
+  padding: 3px;
+
+  span {
+    display: inline;
+    color: #999;
+    font-size: 14px;
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+}
