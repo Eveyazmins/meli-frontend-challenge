@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import shippingSrc from '../../ui/res/shipping.png';
+import shippingSrc from '../../ui/res/envio.png';
 
 const Price = props => {
   const { currency, amount } = props.item.price;

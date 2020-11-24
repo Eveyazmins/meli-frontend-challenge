@@ -37,13 +37,13 @@ const List = props  => {
   
     const renderItem = item => {
         return (
-          <div key={item.id} className="item">
+          <div key={ item.id } className="item">
             <div className="item-container">
-              <Link to={`/items/${item.id}`}>
-                <img className="picture" src={item.picture} alt="Imagen de Lista" />
+              <Link to={`/items/${ item.id }`}>
+                <img className="picture" src={ item.picture } alt="Imagen de Lista" />
               </Link>
               <div className="list-item-description">
-                <Price item={item} />
+                <Price item={ item } />
               </div>
             </div>
           </div>
